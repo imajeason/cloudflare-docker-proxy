@@ -17,6 +17,9 @@ CUSTOM_DOMAIN = "io.951515.xyz"
 
 [env.production]
 name = "cloudflare-docker-proxy"
+const routes = {
+  "docker-proxy.imajeason.workers.dev/": "https://registry-1.docker.io",
+};
 # routes = [
 #   { pattern = "docker.libcuda.so", custom_domain = true },
 #   { pattern = "quay.libcuda.so", custom_domain = true },
